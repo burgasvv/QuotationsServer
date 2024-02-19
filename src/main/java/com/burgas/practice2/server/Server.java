@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import static java.lang.System.out;
 
 /**
- * Class, created to receive clients.
+ * Class, created to receive clients and send messages to them.
  */
 public class Server {
 
@@ -76,7 +76,7 @@ public class Server {
             }
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new IORuntimeException("Disconnect");
 
         } finally {
             serverSocket.close();
