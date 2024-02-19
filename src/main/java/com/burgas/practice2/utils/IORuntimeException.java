@@ -1,4 +1,4 @@
-package com.burgas.practice2.server;
+package com.burgas.practice2.utils;
 
 import java.io.IOException;
 
