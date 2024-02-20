@@ -5,6 +5,6 @@ import static java.lang.System.*;
 public class Service {
 
     public void info(){
-        out.println(getClass().getCanonicalName());
+        out.println(getClass().getName());
     }
 }
