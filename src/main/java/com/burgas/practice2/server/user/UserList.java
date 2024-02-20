@@ -4,12 +4,11 @@ import java.util.List;
 import java.util.Vector;
 
 /**
- * The type User list.
+ * Сlass that stores user logins and passwords
  */
 public class UserList {
 
     private List<User>userList;
-
 
     public UserList() {
         userList = new Vector<>();

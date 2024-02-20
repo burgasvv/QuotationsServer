@@ -10,7 +10,7 @@ import java.util.Scanner;
 import static java.lang.System.*;
 
 /**
- * Client class, created to connect to a server.
+ * Сlass for connecting and communicating with the server.
  */
 public class ClientConnection {
 

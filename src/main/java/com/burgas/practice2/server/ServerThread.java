@@ -11,7 +11,7 @@ import java.util.Random;
 import static java.lang.System.out;
 
 /**
- * The type Server thread.
+ * Сlass that communicates with the client.
  */
 public class ServerThread extends Thread {
 

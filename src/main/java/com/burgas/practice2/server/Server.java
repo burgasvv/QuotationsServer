@@ -4,8 +4,7 @@ import com.burgas.practice2.quotation.QuotationList;
 import com.burgas.practice2.utils.IORuntimeException;
 import com.burgas.practice2.utils.Util;
 
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.time.LocalDateTime;
@@ -20,6 +19,7 @@ public class Server {
 
     private ServerSocket serverSocket;
     private QuotationList quotationList;
+
     /**
      * The client counter.
      */
@@ -33,6 +33,7 @@ public class Server {
         try {
             serverSocket = new ServerSocket(Util.PORT);
             quotationList = new QuotationList();
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -77,7 +78,7 @@ public class Server {
             }
 
         } catch (IOException e) {
-            throw new IORuntimeException("Disconnect");
+            throw new IORuntimeException("Disconnect", e.getCause());
 
         } finally {
             serverSocket.close();

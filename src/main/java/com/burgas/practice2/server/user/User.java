@@ -3,7 +3,7 @@ package com.burgas.practice2.server.user;
 import java.util.Objects;
 
 /**
- * The type User class for storing logins and passwords.
+ * Сlass for storing logins and passwords.
  */
 public class User {
 
