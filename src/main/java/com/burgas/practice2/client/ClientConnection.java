@@ -14,10 +14,10 @@ import static java.lang.System.*;
  */
 public class ClientConnection {
 
-    private Socket socket;
-    private PrintStream printStream;
-    private BufferedReader bufferedReader;
-    private Scanner scanner;
+    private final Socket socket;
+    private final PrintStream printStream;
+    private final BufferedReader bufferedReader;
+    private final Scanner scanner;
     private int quotationsLimit;
     private static final int CLIENT_TIMEOUT = 1000;
 
@@ -153,37 +153,5 @@ public class ClientConnection {
         }
 
         quotationsLimit -= 1;
-    }
-
-    public Socket getSocket() {
-        return socket;
-    }
-
-    public void setSocket(Socket socket) {
-        this.socket = socket;
-    }
-
-    public PrintStream getPrintStream() {
-        return printStream;
-    }
-
-    public void setPrintStream(PrintStream printStream) {
-        this.printStream = printStream;
-    }
-
-    public BufferedReader getBufferedReader() {
-        return bufferedReader;
-    }
-
-    public void setBufferedReader(BufferedReader bufferedReader) {
-        this.bufferedReader = bufferedReader;
-    }
-
-    public Scanner getScanner() {
-        return scanner;
-    }
-
-    public void setScanner(Scanner scanner) {
-        this.scanner = scanner;
     }
 }
